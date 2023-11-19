@@ -1,0 +1,8 @@
+Page 8
+----------
+
+var security = new SecurityProviderSymmetricKey(registrationId,
+                                   individualEnrollmentPrimaryKey,
+                                   individualEnrollmentSecondaryKey)
+var transport = new ProvisioningTransportHandlerAmqp(TransportFallbackType.TcpOnly)
+deviceClient = await ProvisionDevice(provClient, security)
